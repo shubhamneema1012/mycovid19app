@@ -1,1 +1,0 @@
-# mycovid19app
