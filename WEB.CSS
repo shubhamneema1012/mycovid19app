@@ -168,6 +168,7 @@ button:hover{
     align-items: center;
     width:40%;
     height:100%;
+    border-bottom:1px solid #999999;
 }
 .info_image img{
     width:100%;
