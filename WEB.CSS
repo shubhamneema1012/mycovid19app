@@ -168,7 +168,6 @@ button:hover{
     align-items: center;
     width:40%;
     height:100%;
-    border-bottom:1px solid #999999;
 }
 .info_image img{
     width:100%;
@@ -200,3 +199,115 @@ button:hover{
 .info_button{
     margin-top: 5%;
 }
+/* ****************************************** */
+.offer_head{
+    width:80vw;
+    height:15vh;
+    font-size: 3vw;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 10px 10px 10px black;
+    color: #16c380;
+}
+.offer_cards{
+    width:100vw;
+    height:60vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.offer_card{
+    width:30%;
+    height:50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.offer_card:hover{
+    transform: scale(1.1);
+}
+.oc1{
+    background:linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(lkg.jpg);
+}
+.oc2{
+    background:linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(9th.jpg);
+}
+.oc3{
+    background:linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(12th.webp);
+}
+.offer_card h1{
+    color:#fd4d40;
+    font-size: 3vw;
+    padding:5px;
+}
+.offer_card p{
+    color:white;
+    font-size: 1.8vw;
+    padding:10px;
+}
+.offer_card button{
+    font-size: 1.5vw;
+    padding:10px 20px;
+    border-radius: 50px;
+    border:none;
+}
+/* +++++++++++++++++++++++++++++++ */
+.teacher{
+    width:90vw;
+    height:90vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background:linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(teacher.jpg);
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    line-height: 1.5;
+}
+@media(max-width:700px){
+    .cards{
+        display: block;
+        margin-top:0;
+        height:100vh;
+    }
+    .card{
+        width:90%;
+    }
+    .info{
+        display:block;
+    }
+}
+.teacher h1{
+    color:white;
+    font-size: 2.5vw;
+}
+.teacher h2{
+    color:#f1c22e;
+    font-size: 2.5vw;
+}
+.teacher p{
+    color:red;
+    font-size: 2.5vw;
+}
+
