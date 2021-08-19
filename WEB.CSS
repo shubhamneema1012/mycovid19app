@@ -310,4 +310,112 @@ button:hover{
     color:red;
     font-size: 2.5vw;
 }
-
+/* ------------------------------------------------- */
+.Our{
+    width:90vw;
+    height:60vh;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.Oc{
+    width:30%;
+    height:40%;
+    padding:10px;
+    border-bottom: 2px solid orangered;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.Oc2{
+    margin:50px;
+    width:30%;
+    height:40%;
+}
+.Oc h2{
+    color:red;
+}
+.Oc p{
+    color: #999999;
+    margin:15px;
+}
+.Oc h2:hover{
+    color:#e83e8c;
+    cursor: pointer;
+}
+.Oc:hover{
+    box-shadow: 0px 0px 70px black;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.Facility{
+    width:100vw;
+    height:70vh;
+    display: flex;
+    flex-wrap: wrap;
+    background:linear-gradient(
+        rgba(252, 143, 1, 0.6),
+        rgba(252, 143, 1, 0.6)
+    ),url(good.jpg);
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.fac{
+    width:12%;
+    margin:20px;
+    height:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16c380;
+    flex-direction: column;
+    color:white;
+    background-color: #1d5380;
+    transition: transform 0.5s;
+    border:1px solid white;
+}
+.fac:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.fac h4{
+    text-align: center;
+    margin:5px;
+}
+/* ====================================================== */
+.enroll{
+    width:100vw;
+    height:40vh;
+    border: 2px solid black;
+    margin-top:30px;
+    display: flex;
+    background-color:#20c997;
+}
+.enroll p{
+    font-size: 1.5vw;
+    color:white;
+}
+.en1{
+    width:50%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.en2{
+    width:50%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.en2 button{
+    padding:15px 40px;
+    color:white;
+    border-radius: 50px;
+    border:none;
+    background: #104d7e;
+}
