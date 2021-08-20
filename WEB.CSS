@@ -368,7 +368,6 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #16c380;
     flex-direction: column;
     color:white;
     background-color: #1d5380;
@@ -418,4 +417,77 @@ button:hover{
     border-radius: 50px;
     border:none;
     background: #104d7e;
+}
+/* ////////////////////////////////////////// */
+footer{
+    width:100%;
+    height:80vh;
+    background: url(12th.webp);
+    background:linear-gradient(
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.9)
+    ),url(good.jpg);
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div{
+    width:20%;
+    height:100%;
+}
+footer div h1{
+    font-family:'Courier New', Courier, monospace;
+    margin:20%;
+    color:#f1c22e;
+
+}
+.menu2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.addr{
+    width:100%;
+    height:10%;
+    display: flex;
+    justify-content: space-between;
+}
+.addr i{
+    font-size: 1.5vw;
+    margin: auto;
+    color:#f1c22e;
+}
+.addr p{
+height:100%;
+width:70%;
+color:white;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.addr .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:90%;
+    width:20%;
+}
+.addr .social i{
+    color:white
+}
+.si1{
+    background:#fd4d40;
+}
+.si2{
+    background:#16c3b0;
+}
+.si3{
+    background:#ff7300    
+}
+.si4{
+    background:#23b3d9 
 }
