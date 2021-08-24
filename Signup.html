@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Signup</title>
+</head>
+
+<body>
+    <div class="Signup_box">
+        <a href="index.html" class="back">🔙</a>
+        <div class="Signup_head">
+          <h1>SIGNUP</h1>
+        </div>
+        <div class="Signup_data">
+          <input type="text" id="fname" placeholder="First Name" maxlength="15" required>
+          <input type="text" id="mname" placeholder="Middel Name(OPT)" maxlength="15">
+          <input type="text" id="lname" placeholder="Last Name" required>
+          <input type="text" id="age" placeholder="Age" maxlength="2" required>
+          <input type="text" id="mob" placeholder="Mobile" maxlength="11" required>
+          <input type="date" id="birth" placeholder="Birthdate" required>
+          <input type="text" id="gen" placeholder="Gender(F/M/O)" maxlength="5" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="text" id="uname" placeholder="Username" maxlength="15" required>
+          <input type="text" id="pass" placeholder="Password" minlength="8" maxlength="15" required>
+          <input type="text" id="cpass" placeholder="Conform Password" required>
+          <input type="file" id="empty" placeholder="First Name" required>
+        </div>
+        <div class="conform">
+          <p id="error"></p>
+          <p><input type="checkbox" id="cheak">I have enter correct all information</p>
+        </div>
+        <div class="submit">
+          <button onclick="validation()">SUBMIT</button>
+        </div>
+      </div>
+      <footer>
+        <div class="menu2">
+            <h1>Location</h1>
+            <div class="addr">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Mustad ali road ustad agali city gunjaj lol colony 282288</p>
+            </div>
+            <div class="addr">
+                <i class="far fa-clock"></i>
+                <p>Mon 10:00 - 4:00</p>
+            </div>
+            <div class="addr">
+                <i class="far fa-clock"></i>
+                <p>Sat 9:00 -1:00</p>
+            </div>
+        </div>
+        <div class="menu2">
+            <h1>Contact Us</h1>
+            <div class="addr">
+                <i class="fas fa-phone-alt"></i>
+                <p>+91 98864 72227</p>
+            </div>
+            <div class="addr">
+                <i class="fas fa-phone-alt"></i>
+                <p>080 27839266</p>
+            </div>
+            <div class="addr">
+                <i class="far fa-envelope"></i>
+                <p>myacademy@gmail.com</p>
+            </div>
+        </div>
+        <div class="menu2">
+            <h1>Media</h1>
+            <div class="addr">
+                <span class="social si1"><i class="fab fa-facebook-f"></i></span>
+                <span class="social si2"><i class="fab fa-twitter"></i></span>
+                <span class="social si3"><i class="fab fa-instagram"></i></span>
+                <span class="social si4"><i class="fab fa-linkedin-in"></i></span>
+            </div>
+        </div>
+    
+    </footer>
+<script src="https://kit.fontawesome.com/96973846bb.js" crossorigin="anonymous"></script>
+
+    </body>
+    </html>

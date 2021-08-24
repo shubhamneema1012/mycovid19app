@@ -1,102 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <style>
-        .login{
-            width:30vw;
-            height:50vh;
-            box-shadow: 0px 0px 50px 20px black;
-        }
-        .Login_head{
-            width:100%;
-            height:30%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .Login_data{
-            width:100%;
-            height:50%;
-            display: flex;
-            flex-direction: column;
-            padding:5px
-        }
-        input{
-            font-size: 2vw;
-            margin-top: 1vw;
-            border: none;
-            border-bottom: 1px solid blue;
-            background: none;
-            outline: none;
-        }
-        .Login_buttons{
-            width:100%;
-            height:15%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        button{
-            padding:2px 20px;
-            font-size: 1.5vw;
-            background-color:royalblue;
-            color: aliceblue ;
-            margin-right: 10px;
-            border-radius: 10px;
-        }
-        .Forget{
-            font-size: 1vw;
-            border:none;
-            padding:none;
-        }
-        @media(max-width:600px){
-            .login{
-                width:70vw;
-                height:30vh;
-            }
-            input{
-                font-size: 3vw;
-                margin-top:5px;
-            }
-            .Forget{
-                font-size: 3vw;
-            }
-            button{
-                font-size: 4vw;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Login</title>
 </head>
 <body>
-    <div class="Home">
-        <div class="login">
-            <div class="Login_head">
-                <h1>Login</h1>
-            </div>
-            <div class="Login_data">
-                <input type="text" placeholder="Username" id="user">
-                <input type="Password" placeholder="Password" id="password">
-            </div>
-            <div class="Login_buttons">
-                <a href="Forget.html" class="Forget">Forget Password ?</a>
-                <button onclick="go()">Submit</button>
-            </div>
+<div class="main">
+<nav>
+    <div class="Thoughts">
+        
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Managment.html">Managment</a></li>
+      <li><a href="Signup.html">Signup</a></li>
+      <li><a href="Login.html">Login</a></li>
+      <li><a href="Login.html">Contact us</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="Login_box">
+    <div class="Login">
+      <div class="login_head">
+        <h1>Login</h1>
+      </div>
+      <div class="data">
+        <input type="text" id="username" placeholder="Username or Email">
+        <input type="text" id="password" placeholder="Password">
+      </div>
+      <div class="button">
+        <button>Submit</button>
+      </div>
+      <div class="forget">
+        <a href="Forget">Forget Password ?</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="menu2">
+        <h1>Location</h1>
+        <div class="addr">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Mustad ali road ustad agali city gunjaj lol colony 282288</p>
+        </div>
+        <div class="addr">
+            <i class="far fa-clock"></i>
+            <p>Mon 10:00 - 4:00</p>
+        </div>
+        <div class="addr">
+            <i class="far fa-clock"></i>
+            <p>Sat 9:00 -1:00</p>
         </div>
     </div>
-    <script>
-        const go=()=>{
-        let user=document.getElementById("user").value;
-        let password=document.getElementById("password").value;
-        if(user=="shubham@123"){
-            if(password=="12345"){
-                window.open("Wellcome.html");
-            }
-        }}
-    </script>
+    <div class="menu2">
+        <h1>Contact Us</h1>
+        <div class="addr">
+            <i class="fas fa-phone-alt"></i>
+            <p>+91 98864 72227</p>
+        </div>
+        <div class="addr">
+            <i class="fas fa-phone-alt"></i>
+            <p>080 27839266</p>
+        </div>
+        <div class="addr">
+            <i class="far fa-envelope"></i>
+            <p>myacademy@gmail.com</p>
+        </div>
+    </div>
+    <div class="menu2">
+        <h1>Media</h1>
+        <div class="addr">
+            <span class="social si1"><i class="fab fa-facebook-f"></i></span>
+            <span class="social si2"><i class="fab fa-twitter"></i></span>
+            <span class="social si3"><i class="fab fa-instagram"></i></span>
+            <span class="social si4"><i class="fab fa-linkedin-in"></i></span>
+        </div>
+    </div>
+
+</footer>
+<script src="https://kit.fontawesome.com/96973846bb.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

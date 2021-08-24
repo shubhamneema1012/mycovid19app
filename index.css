@@ -1,50 +1,684 @@
-        *{
-            margin:0;
-            padding:0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-        .Home{
-            width:100vw;
-            height:100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: url("Background.png");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            flex-direction: column;
-        }
-        .Home h1{
-            font-size: 5vw;
-            color: blue;
-            text-shadow: 5px 15px 15px black;
-        }
-        .buttons{
-            width:50%;
-            height:20%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-        a{
-            padding:5px 20px;
-            text-decoration: none;
-            font-size: 2vw;
-            border:2px solid blue;
-            transition: transform 0.5s;
-        }
-        a:hover{
-            transform: scale(1.1);
-        }
-        @media(max-width:700px){
-            .Home h1{
-                font-size: 8vw;
-            }
-            a{
-                font-size: 5vw;
-            }
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+  .main{
+    width:100vw;
+    height:100vh;
+    background:linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+        ),url(images/Home_Background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  nav{
+    width:100%;
+    height:10vh;
+    z-index:1;
+    margin-top: 3vh;
+    display: flex;        
+    justify-content: space-between;
+    position: fixed;
+  }
+  nav .Thoughts{
+    width:30%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  nav .Thoughts img{
+      height:8rem;
+      width:8rem;
+  }
+  nav .Thoughts button{
+    padding:10px 20px;
+    background: blue;
+    border-radius: 20px;
+    font-size: 1rem;
+    outline:none;
+    color:white;
+    border:none;
+  }
+  nav ul{
+    width:50%;
+    height:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav ul li{
+    list-style: none;
+}
+nav ul li a{
+  color:black;
+    background:none;
+    text-decoration:none;
+    font-size: 1.5rem;
+    border:none;
+    transition: width  0.6s;
+}
+a:hover{
+    cursor: pointer;
+}
+nav ul li a::after{
+    content:"";
+    width:0;
+    height:2px;
+    margin: auto;
+    background: red;
+    transition: width 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.main .contant{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contant h1{
+  font-size:5vw;
+  text-align: center;
+  color:white
+}
+.contant h3{
+  font-size: 4vw;
+  text-align: center;
+  margin:20px;
+  color: aqua;
+}
+.contant p{
+  text-align: center;
+  font-size: 3vw;
+  color:orange;
+}
+/* ==================================================== */
+.cards{
+  width:100vw;
+  height:70vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card{
+  width:25%;
+  height:70%;
+  margin-top: 5%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card p{
+  text-align:center;
+  color:white;
+  line-height: 1.5;
+  font-weight: bold;
+  padding:20px 20px;
+}
+.c1{
+background: #fd4d40;
+}
+.c2{
+  background: #f1c22e;
+}
+.c3{
+  background: #16c380;
+}
+i{
+  color:white;
+  font-size: 3vw;
+}
+span{
+  width:6rem;
+  height:12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top:-10%;
+}
+.card:hover{
+  /* transform: scale(1.1); */
+  margin-top: 4%;
+}
+.card h2{
+  color:white;
+  padding:20px;
+}
+.card button{
+  padding:15px 40px;
+  color:white;
+  border-radius: 50px;
+  border:none;
+  font-size:1.5rem;
+}
+button:hover{
+  cursor: pointer;
+}
+/* *****************Login*************** */
+.Login_box{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  top:0;
+}
+.Login{
+  width:70%;
+  height:60%;
+}
+.login_head{
+  width:100%;
+  height:20%;
+  display:flex;
+  justify-content: center;
+  align-items: center ;
+  font-size: 1.5rem;
+  color: blue;
+}
+.Login .data{
+  width:100%;
+  height:40%;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+}
+.Login .data input{
+  margin:1.5vw;
+  width:100%;
+  font-size: 1.5rem;
+  text-align: center;
+  background: none;
+  border:none;
+  border-bottom: 1px solid blue;
+  color:white;
+  outline: none;    
+}
+.Login .forget{
+  width:100%;
+  height:20%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.Login .forget a{
+  color:white;
+  text-decoration: none;
+}
+.Login .button{
+  width:100%;
+  height:20%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.Login .button button{
+  padding:5px 20px;
+  font-size: 1.5rem;
+  background-color: blueviolet;
+}
+.data::after{
+  content:"Please enter correct username and password";
+  width:100%;
+    display:none;
+    height:10%;
+    text-align: center;
+    color:red;
+  }
+  /* ***********************SIGNUP************************** */
+  .back{
+    text-decoration:none;
+    position: absolute;
+    top:5px;
+    left:5px;
+    font-size: 3rem;
+    padding:2px 10px;
+    border:none
+  }
+  .Signup_box{
+    width:100vw;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Signup_head{
+  width:100%;
+  height:15%;
+  display: flex;
+  align-items: center;
+  color:blue;
+  justify-content: center;
+}
+.Signup_data{
+  width:80%;
+  height:60%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+.Signup_data input{
+  font-size: 1.5rem;
+  background: none;
+  outline:none;
+  border:none;
+  text-align: center;
+  border-bottom:1px solid blue;
+}
+.conform{
+  width:100%;
+  height:10%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: blue;
+}
+.submit{
+  width:100%;
+  height:15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#error{
+  color:red;
+}
+.submit button{
+  padding:5px 20px;
+  font-size: 1.5rem;
+  background-color: blueviolet;
+}
+/* *****************Information**************** */
+.info{
+  width:80vw;
+  height:60vh;
+  margin:auto;
+  display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .info_image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:40%;
+      height:100%;
+  }
+  .info_image img{
+      width:100%;
+  }
+  .school{
+      width:57%;
+      height:100%;
+  }
+  .school h1{
+      padding:10px 0px;
+      color: #fd4d40; 
+      font-size: 2.5vw;
+  }
+  .school p{
+      color: #999999;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.5;
+      background-color: #fff;
+  }
+  .school button{
+      padding:15px 40px;
+      color:white;
+      border-radius: 50px;
+      border:none;
+      background: #104d7e;
+  }
+  .info_button{
+      margin-top: 5%;
+  }
+  /* ********************OFFER****************** */
+  .offer_head{
+    width:80vw;
+    height:15vh;
+    font-size: 3vw;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 10px 10px 10px black;
+    color: #16c380;
+}
+.offer_cards{
+    width:100vw;
+    height:60vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.offer_card{
+    width:30%;
+    height:50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.offer_card:hover{
+    transform: scale(1.1);
+}
+.oc1{
+    background:linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(images/lkg.jpg);
+}
+.oc2{
+    background:linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(images/9th.jpg);
+}
+.oc3{
+    background:linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(images/12th.webp);
+}
+.offer_card h1{
+    color:#fd4d40;
+    font-size: 3vw;
+    padding:5px;
+}
+.offer_card p{
+    color:white;
+    font-size: 1.8vw;
+    padding:10px;
+}
+.offer_card button{
+    font-size: 1.5vw;
+    padding:10px 20px;
+    border-radius: 50px;
+    border:none;
+}
+/* *******************TEACHER*************** */
+.teacher{
+  width:90vw;
+  height:90vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background:linear-gradient(
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  ),url(images/teacher.jpg);
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  line-height: 1.5;
+}
+.teacher h1{
+  color:white;
+  font-size: 2.5vw;
+}
+.teacher h2{
+  color:#f1c22e;
+  font-size: 2.5vw;
+}
+.teacher p{
+  color:red;
+  font-size: 2.5vw;
+}
+/* ****************************************** */
+.Our{
+  width:90vw;
+  height:60vh;
+  margin:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.Oc{
+  width:30%;
+  height:40%;
+  padding:10px;
+  border-bottom: 2px solid orangered;
+  border-radius: 10px;
+  background-color: transparent;
+}
+.Oc2{
+  margin:50px;
+  width:30%;
+  height:40%;
+}
+.Oc h2{
+  color:red;
+}
+.Oc p{
+  color: #999999;
+  margin:15px;
+}
+.Oc h2:hover{
+  color:#e83e8c;
+  cursor: pointer;
+}
+.Oc:hover{
+  box-shadow: 0px 0px 70px black;
+}
+/* ************************************************ */
+.Facility{
+  width:100vw;
+  height:70vh;
+  display: flex;
+  flex-wrap: wrap;
+  background:linear-gradient(
+      rgba(252, 143, 1, 0.6),
+      rgba(252, 143, 1, 0.6)
+  ),url(images/good.jpg);
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.fac{
+  width:12%;
+  margin:20px;
+  height:25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:white;
+  background-color: #1d5380;
+  transition: transform 0.5s;
+  border:1px solid white;
+}
+.fac:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.fac h4{
+  text-align: center;
+  margin:5px;
+}
+/* ***************************************** */
+.enroll{
+  width:100vw;
+  height:40vh;
+  margin-top:30px;
+  display: flex;
+  background-color:#20c997;
+}
+.enroll p{
+  font-size: 1.5vw;
+  color:white;
+}
+.en1{
+  width:50%;
+  height:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.en2{
+  width:50%;
+  height:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.en2 button{
+  padding:15px 40px;
+  color:white;
+  border-radius: 50px;
+  border:none;
+  background: #104d7e;
+}
+/* **************************************************** */
+footer{
+  width:100%;
+  height:60vh;
+  background: url(12th.webp);
+  background:linear-gradient(
+      rgba(0,0,0,0.9),
+      rgba(0,0,0,0.9)
+  ),url(images/good.jpg);
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer div{
+  width:20%;
+  height:100%;
+}
+footer div h1{
+  font-family:'Courier New', Courier, monospace;
+  margin:20%;
+  color:#f1c22e;
 
-    
+}
+.menu2{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.addr{
+  width:100%;
+  height:10%;
+  display: flex;
+  justify-content: space-between;
+}
+.addr i{
+  font-size: 1.5rem;
+  margin: auto;
+  color:#f1c22e;
+}
+.addr p{
+height:100%;
+width:70%;
+color:white;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.addr .social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  width:20%;
+}
+.addr .social i{
+  color:white
+}
+.si1{
+  background:#fd4d40;
+}
+.si2{
+  background:#16c3b0;
+}
+.si3{
+  background:#ff7300    
+}
+.si4{
+  background:#23b3d9 
+}
+/******************managment******************** */
+.managment{
+    width:100%;
+    height:100%;
+    flex-wrap:wrap;
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+    align-items:center;
+}
+.manage{
+  width:30%;
+  height:30vh;
+  display:flex;
+  justify-content:center;
+  margin:20px;
+  align-items:center;
+  transition:transform 0.5s;
+  background:orange;
+  box-shadow:0px 10px 10px 1px black;
+  border-radius:10px;
+}
+.manage a{
+  text-decoration:none;
+  font-size:1.5rem;
+  font-weight:bold;
+}
+.manage:hover{
+  transform:scale(1.1);
+}
+.manage_head{
+  width:100%;
+  height:20vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+@media(max-width:800px){
+  .Signup_data input{
+    width:100%;
+    margin-top:40px; 
+     }
+     .Signup_box{
+       margin-top: 2rem;
+       height:fit-content
+    }
+    .submit button{
+      margin:20px;
+    }
+    .conform{
+      margin:20px
+    }
+      
+}
