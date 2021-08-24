@@ -23,26 +23,21 @@
     display: flex;        
     justify-content: space-between;
     position: fixed;
+    background: none;
   }
   nav .Thoughts{
     width:30%;
     height:100%;
     display:flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    background: none;
   }
   nav .Thoughts img{
       height:8rem;
       width:8rem;
-  }
-  nav .Thoughts button{
-    padding:10px 20px;
-    background: blue;
-    border-radius: 20px;
-    font-size: 1rem;
-    outline:none;
-    color:white;
-    border:none;
+    background: none;
+
   }
   nav ul{
     width:50%;
